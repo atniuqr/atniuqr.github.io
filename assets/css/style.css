@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Updated color scheme to match GitHub repositories dark theme */
 :root {
@@ -16,6 +15,25 @@
   --heading-color: #f0f6fc;
 }
 
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.fira {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.momo {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container-lg {
   width: 60%;
   margin: 0 auto;
@@ -29,16 +47,18 @@ body {
 }
 
 header {
-  font-family: "Inter", sans-serif;
-  text-align: center;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
   color: var(--heading-color);
 }
 
 header a,
 header a:visited {
-  font-family: "Inter", sans-serif;
-  text-align: center;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
   color: var(--link-color);
 }
@@ -70,7 +90,8 @@ h1:visited {
 header h1 {
   text-decoration: none;
   font-size: 30pt;
-  font-family: "Inter", sans-serif;
+  font-family: "Momo Trust Display", sans-serif;
+  font-style: normal;
   padding-bottom: 10px;
   margin-top: 60px;
   font-weight: 700;
@@ -78,7 +99,8 @@ header h1 {
 
 header h2 {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Momo Trust Display", sans-serif;
+  font-style: normal;
   font-size: 26pt;
   color: var(--heading-color);
   font-weight: 600;
@@ -87,7 +109,8 @@ header h2 {
 header h1.a,
 h1.a:hover,
 h1.a:visited {
-  font-family: "Noto Serif", serif;
+  font-family: "Momo Trust Display", sans-serif;
+  font-style: normal;
   text-align: center;
   font-size: larger;
   text-decoration: none;

@@ -34,6 +34,37 @@
   font-style: normal;
 }
 
+/* Para listas desordenadas (ul) */
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+ul li::before {
+  content: "→"; /* Flecha derecha */
+  color: var(--link-color);
+  font-weight: bold;
+  position: absolute;
+  left: -20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* Opcional: diferentes estilos para diferentes niveles */
+ul ul li::before {
+  content: "›"; /* Flecha angular */
+  color: var(--muted-text);
+}
+
+ul ul ul li::before {
+  content: "➤"; /* Flecha rellena */
+  color: var(--accent-color);
+}
+
 .container-lg {
   width: 60%;
   margin: 0 auto;

@@ -1,16 +1,16 @@
-/* Dracula Theme - Minimalista */
+/* GitHub Black Theme */
 :root {
-  --bg: #282a36;
-  --current-line: #44475a;
-  --fg: #f8f8f2;
-  --comment: #6272a4;
-  --cyan: #8be9fd;
-  --green: #50fa7b;
-  --orange: #ffb86c;
-  --pink: #ff79c6;
-  --purple: #bd93f9;
-  --red: #ff5555;
-  --yellow: #f1fa8c;
+  /* Cambiando de paleta Dracula a GitHub Black */
+  --bg: #0d1117;
+  --bg-secondary: #161b22;
+  --border: #30363d;
+  --fg: #c9d1d9;
+  --fg-muted: #8b949e;
+  --fg-subtle: #6e7681;
+  --accent-fg: #58a6ff;
+  --success-fg: #3fb950;
+  --attention-fg: #d29922;
+  --danger-fg: #f85149;
 }
 
 * {
@@ -19,25 +19,19 @@
   box-sizing: border-box;
 }
 
-/* Removiendo márgenes del body para fondo completo */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  /* Ajustando tipografía y tamaños al estilo GitHub */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--fg);
   background-color: var(--bg);
-  padding: 2rem 1rem;
+  padding: 32px;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding: 3rem 2rem;
-  }
-}
-
-/* Diseño minimalista con máximo width centrado */
+/* Limitando el ancho del contenedor para no ocupar toda la ventana */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -47,141 +41,176 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2rem 0 1rem;
+  /* Ajustando tamaños y espaciado al estilo GitHub */
+  margin-top: 24px;
+  margin-bottom: 16px;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.25;
+  color: var(--fg);
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: var(--purple);
+  font-size: 32px;
   margin-top: 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
 }
 
 h2 {
-  font-size: 2rem;
-  color: var(--cyan);
-  border-bottom: 1px solid var(--current-line);
-  padding-bottom: 0.5rem;
+  font-size: 24px;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
 }
 
 h3 {
-  font-size: 1.5rem;
-  color: var(--pink);
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13.6px;
+  color: var(--fg-subtle);
 }
 
 p {
-  margin: 1rem 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 a {
-  color: var(--cyan);
+  color: var(--accent-fg);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
 }
 
 a:hover {
-  border-bottom-color: var(--cyan);
+  text-decoration: underline;
 }
 
-/* Code styling minimalista */
 code {
-  background-color: var(--current-line);
-  color: var(--yellow);
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
-  font-family: "Courier New", monospace;
-  font-size: 0.9em;
+  /* Estilo de código inline al estilo GitHub */
+  background-color: var(--bg-secondary);
+  color: var(--fg);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 85%;
 }
 
 pre {
-  background-color: var(--current-line);
-  padding: 1rem;
-  border-radius: 4px;
+  /* Bloques de código al estilo GitHub */
+  background-color: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 6px;
   overflow-x: auto;
-  margin: 1.5rem 0;
-  border-left: 3px solid var(--purple);
+  margin-bottom: 16px;
+  font-size: 85%;
+  line-height: 1.45;
 }
 
 pre code {
   background: none;
   padding: 0;
+  font-size: 100%;
 }
 
-/* Lists */
 ul,
 ol {
-  margin: 1rem 0;
-  padding-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 2em;
 }
 
 li {
-  margin: 0.5rem 0;
+  margin-top: 0.25em;
 }
 
-/* Tablas minimalistas */
+li + li {
+  margin-top: 0.25em;
+}
+
 table {
+  /* Tablas al estilo GitHub */
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin-bottom: 16px;
+  border-spacing: 0;
 }
 
 th,
 td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid var(--current-line);
+  padding: 6px 13px;
+  border: 1px solid var(--border);
 }
 
 th {
-  color: var(--purple);
   font-weight: 600;
+  background-color: var(--bg-secondary);
 }
 
-tr:hover {
-  background-color: rgba(68, 71, 90, 0.3);
+tr {
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
 }
 
-/* Blockquotes */
+tr:nth-child(2n) {
+  background-color: var(--bg-secondary);
+}
+
 blockquote {
-  margin: 1.5rem 0;
-  padding: 0.5rem 1rem;
-  border-left: 3px solid var(--green);
-  background-color: rgba(68, 71, 90, 0.3);
-  font-style: italic;
-  color: var(--comment);
+  /* Citas al estilo GitHub */
+  margin: 0 0 16px 0;
+  padding: 0 1em;
+  color: var(--fg-muted);
+  border-left: 0.25em solid var(--border);
 }
 
-/* Details/Summary minimalista */
 details {
-  margin: 1rem 0;
-  padding: 0.5rem;
-  border: 1px solid var(--current-line);
-  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 summary {
   cursor: pointer;
   font-weight: 600;
-  color: var(--orange);
-  user-select: none;
+  padding: 8px 0;
 }
 
 summary:hover {
-  color: var(--yellow);
+  color: var(--accent-fg);
 }
 
-/* Horizontal rule */
 hr {
-  border: none;
-  border-top: 1px solid var(--current-line);
-  margin: 2rem 0;
+  /* Separador horizontal al estilo GitHub */
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--border);
+  border: 0;
 }
 
-/* Images */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
 }

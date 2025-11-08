@@ -1,639 +1,187 @@
-/* ================================
-   Dracula Theme - Modern CSS
-   ================================ */
-
-/* Dracula Color Palette */
+/* Dracula Theme - Minimalista */
 :root {
-    --dracula-bg: #282a36;
-    --dracula-current-line: #44475a;
-    --dracula-selection: #44475a;
-    --dracula-foreground: #f8f8f2;
-    --dracula-comment: #6272a4;
-    --dracula-cyan: #8be9fd;
-    --dracula-green: #50fa7b;
-    --dracula-orange: #ffb86c;
-    --dracula-pink: #ff79c6;
-    --dracula-purple: #bd93f9;
-    --dracula-red: #ff5555;
-    --dracula-yellow: #f1fa8c;
-    
-    /* Semantic Colors */
-    --bg-primary: var(--dracula-bg);
-    --bg-secondary: #21222c;
-    --bg-elevated: #2d2f3d;
-    --text-primary: var(--dracula-foreground);
-    --text-secondary: var(--dracula-comment);
-    --accent-primary: var(--dracula-purple);
-    --accent-secondary: var(--dracula-pink);
-    --link-color: var(--dracula-cyan);
-    --code-bg: #1e1f29;
-    
-    /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 3rem;
-    
-    /* Border Radius */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
-    
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --bg: #282a36;
+  --current-line: #44475a;
+  --fg: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
 }
-
-/* ================================
-   Base Styles
-   ================================ */
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Removiendo márgenes del body para fondo completo */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--fg);
+  background-color: var(--bg);
+  padding: 2rem 1rem;
 }
 
-::selection {
-    background-color: var(--dracula-selection);
-    color: var(--text-primary);
+@media (min-width: 768px) {
+  body {
+    padding: 3rem 2rem;
+  }
 }
 
-/* ================================
-   Container & Layout
-   ================================ */
-
-.container-lg {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+/* Diseño minimalista con máximo width centrado */
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.markdown-body {
-    background-color: var(--bg-secondary);
-    padding: var(--spacing-2xl);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-}
-
-/* ================================
-   Typography
-   ================================ */
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-md);
-    font-weight: 600;
-    line-height: 1.25;
-    color: var(--dracula-purple);
-    position: relative;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: var(--dracula-pink);
-    border-bottom: 3px solid var(--dracula-current-line);
-    padding-bottom: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-}
-
-h1:first-child {
-    margin-top: 0;
+  font-size: 2.5rem;
+  color: var(--purple);
+  margin-top: 0;
 }
 
 h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid var(--dracula-current-line);
-    padding-bottom: var(--spacing-sm);
+  font-size: 2rem;
+  color: var(--cyan);
+  border-bottom: 1px solid var(--current-line);
+  padding-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    color: var(--dracula-cyan);
-}
-
-h4 {
-    font-size: 1.25rem;
-}
-
-h5 {
-    font-size: 1.1rem;
-}
-
-h6 {
-    font-size: 1rem;
-    color: var(--dracula-comment);
+  font-size: 1.5rem;
+  color: var(--pink);
 }
 
 p {
-    margin-bottom: var(--spacing-md);
-    color: var(--text-primary);
+  margin: 1rem 0;
 }
 
-/* ================================
-   Links
-   ================================ */
-
 a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid transparent;
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
 }
 
 a:hover {
-    color: var(--dracula-purple);
-    border-bottom-color: var(--dracula-purple);
+  border-bottom-color: var(--cyan);
 }
 
-a:active {
-    color: var(--dracula-pink);
-}
-
-/* Anchor Links */
-.anchorjs-link {
-    color: var(--dracula-comment) !important;
-    opacity: 0;
-    transition: opacity 0.2s ease, color 0.2s ease;
-    border: none !important;
-}
-
-h1:hover .anchorjs-link,
-h2:hover .anchorjs-link,
-h3:hover .anchorjs-link,
-h4:hover .anchorjs-link,
-h5:hover .anchorjs-link,
-h6:hover .anchorjs-link {
-    opacity: 1;
-}
-
-.anchorjs-link:hover {
-    color: var(--dracula-cyan) !important;
-}
-
-/* ================================
-   Lists
-   ================================ */
-
-ul, ol {
-    padding-left: var(--spacing-xl);
-    margin-bottom: var(--spacing-md);
-}
-
-li {
-    margin-bottom: var(--spacing-sm);
-    color: var(--text-primary);
-}
-
-li > ul, li > ol {
-    margin-top: var(--spacing-sm);
-    margin-bottom: 0;
-}
-
-/* Task Lists */
-.task-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.task-list-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-sm);
-}
-
-.task-list-item-checkbox {
-    margin-top: 0.3rem;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    accent-color: var(--dracula-green);
-}
-
-/* Definition Lists */
-dl {
-    margin-bottom: var(--spacing-lg);
-}
-
-dt {
-    font-weight: 600;
-    color: var(--dracula-orange);
-    margin-top: var(--spacing-md);
-    margin-bottom: var(--spacing-xs);
-}
-
-dd {
-    margin-left: var(--spacing-xl);
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-sm);
-}
-
-/* ================================
-   Text Formatting
-   ================================ */
-
-strong {
-    font-weight: 600;
-    color: var(--dracula-yellow);
-}
-
-em {
-    font-style: italic;
-    color: var(--dracula-purple);
-}
-
-del {
-    text-decoration: line-through;
-    color: var(--dracula-red);
-    opacity: 0.7;
-}
-
-sub, sup {
-    font-size: 0.75em;
-}
-
-/* Inline Code */
-code.language-plaintext,
-code.highlighter-rouge {
-    background-color: var(--code-bg);
-    color: var(--dracula-pink);
-    padding: 0.2em 0.4em;
-    border-radius: var(--radius-sm);
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
-    font-size: 0.9em;
-    border: 1px solid var(--dracula-current-line);
-}
-
-/* ================================
-   Code Blocks
-   ================================ */
-
-.highlighter-rouge,
-.highlight {
-    background-color: var(--code-bg);
-    border-radius: var(--radius-md);
-    margin-bottom: var(--spacing-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--dracula-current-line);
-}
-
-.highlight pre {
-    margin: 0;
-    padding: var(--spacing-lg);
-    overflow-x: auto;
-    background-color: transparent;
+/* Code styling minimalista */
+code {
+  background-color: var(--current-line);
+  color: var(--yellow);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
 }
 
 pre {
-    font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
-    font-size: 0.9em;
-    line-height: 1.5;
-    color: var(--text-primary);
+  background-color: var(--current-line);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-left: 3px solid var(--purple);
 }
 
-/* Syntax Highlighting Colors */
-.highlight .c,
-.highlight .c1,
-.highlight .cm { color: var(--dracula-comment); font-style: italic; }
-.highlight .k,
-.highlight .kd,
-.highlight .kn,
-.highlight .kr { color: var(--dracula-pink); }
-.highlight .nx,
-.highlight .n { color: var(--text-primary); }
-.highlight .nf,
-.highlight .nx { color: var(--dracula-green); }
-.highlight .s,
-.highlight .s1,
-.highlight .s2,
-.highlight .dl { color: var(--dracula-yellow); }
-.highlight .mi,
-.highlight .mf,
-.highlight .m { color: var(--dracula-purple); }
-.highlight .o,
-.highlight .p { color: var(--dracula-pink); }
-.highlight .na,
-.highlight .nb { color: var(--dracula-cyan); }
-.highlight .nt { color: var(--dracula-pink); }
-.highlight .nc,
-.highlight .nn { color: var(--dracula-cyan); }
-.highlight .cp { color: var(--dracula-pink); }
-.highlight .nd { color: var(--dracula-green); }
-
-/* ================================
-   Blockquotes
-   ================================ */
-
-blockquote {
-    margin: var(--spacing-lg) 0;
-    padding: var(--spacing-md) var(--spacing-lg);
-    background-color: var(--bg-elevated);
-    border-left: 4px solid var(--dracula-purple);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+pre code {
+  background: none;
+  padding: 0;
 }
 
-blockquote p {
-    margin: var(--spacing-sm) 0;
+/* Lists */
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
 }
 
-blockquote p:first-child {
-    margin-top: 0;
+li {
+  margin: 0.5rem 0;
 }
 
-blockquote p:last-child {
-    margin-bottom: 0;
-}
-
-blockquote code {
-    background-color: var(--code-bg);
-}
-
-/* ================================
-   Tables
-   ================================ */
-
+/* Tablas minimalistas */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: var(--spacing-lg);
-    background-color: var(--bg-elevated);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
 }
 
-thead {
-    background-color: var(--dracula-current-line);
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--current-line);
 }
 
 th {
-    padding: var(--spacing-md);
-    text-align: left;
-    font-weight: 600;
-    color: var(--dracula-purple);
-    border-bottom: 2px solid var(--dracula-pink);
+  color: var(--purple);
+  font-weight: 600;
 }
 
-td {
-    padding: var(--spacing-md);
-    border-bottom: 1px solid var(--dracula-current-line);
+tr:hover {
+  background-color: rgba(68, 71, 90, 0.3);
 }
 
-tbody tr {
-    transition: background-color 0.2s ease;
+/* Blockquotes */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--green);
+  background-color: rgba(68, 71, 90, 0.3);
+  font-style: italic;
+  color: var(--comment);
 }
 
-tbody tr:hover {
-    background-color: rgba(189, 147, 249, 0.1);
-}
-
-tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* ================================
-   Horizontal Rule
-   ================================ */
-
-hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        var(--dracula-purple),
-        var(--dracula-pink),
-        transparent
-    );
-    margin: var(--spacing-2xl) 0;
-    border-radius: var(--radius-sm);
-}
-
-/* ================================
-   Images
-   ================================ */
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-    margin: var(--spacing-md) 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
-}
-
-/* ================================
-   Interactive Elements
-   ================================ */
-
+/* Details/Summary minimalista */
 details {
-    background-color: var(--bg-elevated);
-    border: 1px solid var(--dracula-current-line);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-    box-shadow: var(--shadow-sm);
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid var(--current-line);
+  border-radius: 4px;
 }
 
 summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--dracula-cyan);
-    padding: var(--spacing-sm);
-    margin: calc(-1 * var(--spacing-md));
-    border-radius: var(--radius-md);
-    transition: background-color 0.2s ease, color 0.2s ease;
-    user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--orange);
+  user-select: none;
 }
 
 summary:hover {
-    background-color: var(--dracula-current-line);
-    color: var(--dracula-purple);
+  color: var(--yellow);
 }
 
-summary::marker {
-    color: var(--dracula-pink);
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--current-line);
+  margin: 2rem 0;
 }
 
-details[open] summary {
-    margin-bottom: var(--spacing-md);
-    border-bottom: 1px solid var(--dracula-current-line);
-}
-
-details[open] {
-    padding-bottom: var(--spacing-md);
-}
-
-/* ================================
-   Scrollbar Styling
-   ================================ */
-
-::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-primary);
-    border-radius: var(--radius-sm);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--dracula-current-line);
-    border-radius: var(--radius-sm);
-    border: 2px solid var(--bg-primary);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--dracula-purple);
-}
-
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--dracula-current-line) var(--bg-primary);
-}
-
-/* ================================
-   Responsive Design
-   ================================ */
-
-@media (max-width: 768px) {
-    .container-lg {
-        padding: var(--spacing-lg) var(--spacing-md);
-    }
-    
-    .markdown-body {
-        padding: var(--spacing-lg);
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.75rem;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-    
-    table {
-        font-size: 0.9em;
-    }
-    
-    th, td {
-        padding: var(--spacing-sm);
-    }
-    
-    pre {
-        font-size: 0.85em;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    
-    .markdown-body {
-        padding: var(--spacing-md);
-    }
-    
-    h1 {
-        font-size: 1.75rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    ul, ol {
-        padding-left: var(--spacing-lg);
-    }
-}
-
-/* ================================
-   Animations
-   ================================ */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.markdown-body {
-    animation: fadeIn 0.5s ease-out;
-}
-
-/* ================================
-   Print Styles
-   ================================ */
-
-@media print {
-    body {
-        background-color: white;
-        color: black;
-    }
-    
-    .markdown-body {
-        box-shadow: none;
-        background-color: white;
-    }
-    
-    a {
-        color: blue;
-        text-decoration: underline;
-    }
-    
-    pre {
-        border: 1px solid #ccc;
-        page-break-inside: avoid;
-    }
-}
-
-/* ================================
-   Utility Classes
-   ================================ */
-
-.text-center {
-    text-align: center;
-}
-
-.text-muted {
-    color: var(--text-secondary);
-}
-
-.mt-lg {
-    margin-top: var(--spacing-lg);
-}
-
-.mb-lg {
-    margin-bottom: var(--spacing-lg);
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }

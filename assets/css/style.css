@@ -11,6 +11,13 @@
   --success-fg: #3fb950;
   --attention-fg: #d29922;
   --danger-fg: #f85149;
+  /* Agregando colores para syntax highlighting */
+  --code-keyword: #ff79c6;
+  --code-string: #a5d6ff;
+  --code-function: #d2a8ff;
+  --code-comment: #8b949e;
+  --code-number: #79c0ff;
+  --code-operator: #ff7b72;
 }
 
 * {
@@ -29,9 +36,9 @@ body {
   padding: 32px;
 }
 
-/* Limitando el ancho del contenedor para no ocupar toda la ventana */
+/* Reduciendo el ancho a 760px (estilo Kubrick de WordPress) */
 main {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -118,6 +125,77 @@ pre code {
   background: none;
   padding: 0;
   font-size: 100%;
+}
+
+/* Añadiendo syntax highlighting para bloques de código */
+/* Syntax highlighting */
+pre code .keyword {
+  color: var(--code-keyword);
+}
+
+pre code .string {
+  color: var(--code-string);
+}
+
+pre code .function {
+  color: var(--code-function);
+}
+
+pre code .comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+pre code .number {
+  color: var(--code-number);
+}
+
+pre code .operator {
+  color: var(--code-operator);
+}
+
+/* Clases de lenguaje específicas para resaltado */
+.language-javascript .token.keyword,
+.language-js .token.keyword,
+.language-typescript .token.keyword,
+.language-ts .token.keyword {
+  color: var(--code-keyword);
+}
+
+.language-javascript .token.string,
+.language-js .token.string,
+.language-typescript .token.string,
+.language-ts .token.string {
+  color: var(--code-string);
+}
+
+.language-javascript .token.function,
+.language-js .token.function,
+.language-typescript .token.function,
+.language-ts .token.function {
+  color: var(--code-function);
+}
+
+.language-javascript .token.comment,
+.language-js .token.comment,
+.language-typescript .token.comment,
+.language-ts .token.comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.language-javascript .token.number,
+.language-js .token.number,
+.language-typescript .token.number,
+.language-ts .token.number {
+  color: var(--code-number);
+}
+
+.language-javascript .token.operator,
+.language-js .token.operator,
+.language-typescript .token.operator,
+.language-ts .token.operator {
+  color: var(--code-operator);
 }
 
 ul,

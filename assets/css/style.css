@@ -43,9 +43,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 12pt;
-  font-family: "Inter", -apple-system, BlinkMacMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.6;
 }
 
+/* Headers y encabezados con Momo Trust Display */
 header {
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
@@ -68,7 +70,7 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* Updated heading colors to match GitHub's heading style */
+/* Todos los encabezados usan Momo Trust Display */
 h1,
 h2,
 h3,
@@ -76,6 +78,8 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 600;
 }
 
 h1 a,
@@ -85,6 +89,7 @@ h1:visited {
   text-align: center;
   font-size: 3.5rem;
   text-decoration: none;
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 header h1 {
@@ -121,28 +126,32 @@ h1.a:visited {
   font-size: 20pt;
   font-weight: bold;
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 #content-wrapper h4 {
   font-size: 19pt;
   font-weight: bold;
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 #content-wrapper h5 {
   font-size: 18pt;
   font-weight: bold;
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 #content-wrapper h6 {
   font-size: 16pt;
   font-weight: bold;
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 #content-wrapper {
-  font-family: "Inter", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin: 0 auto;
   width: 60%;
   color: var(--text-color);
@@ -155,14 +164,14 @@ h1.a:visited {
 #content-wrapper h4,
 #content-wrapper h5,
 #content-wrapper h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Momo Trust Display", sans-serif;
   color: var(--heading-color);
   font-weight: 600;
 }
 
 #main-content a,
 #main-content a:visited {
-  font-family: "Inter", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: var(--link-color);
@@ -170,8 +179,9 @@ h1.a:visited {
 }
 
 a, a:hover, a:visited{
-color: var(--link-color);
-color: var(--link-hover-color);
+  color: var(--link-color);
+  color: var(--link-hover-color);
+  font-family: "Fira Sans", sans-serif;
 }
 
 #main-content a:hover {
@@ -181,7 +191,7 @@ color: var(--link-hover-color);
 
 #sidebar a,
 #sidebar a:visited {
-  font-family: "Inter", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-decoration: none;
   color: var(--link-color);
 }
@@ -199,10 +209,12 @@ color: var(--link-hover-color);
 #content-wrapper h2 {
   text-align: center;
   color: var(--heading-color);
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 #main-content p {
   text-align: justify;
+  font-family: "Fira Sans", sans-serif;
 }
 
 /* Enhanced code block styling to match GitHub repositories */
@@ -317,4 +329,19 @@ hr {
 .k + .n {
   /* Keywords followed by names */
   color: #ffa657;
+}
+
+/* Texto general con Fira Sans */
+p, li, td, th, span, div {
+  font-family: "Fira Sans", sans-serif;
+}
+
+blockquote {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+}
+
+code:not([class*="language-"]) {
+  font-family: "JetBrains Mono", monospace;
+  font-family: "Fira Sans", sans-serif;
 }

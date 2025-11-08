@@ -6,9 +6,9 @@
   --bg-color: #0d1117;
   --text-color: #c9d1d9;
   --header-color: #c9d1d9;
-  /* Updated link colors to be more vibrant and visible */
-  --link-color: #4493f8;
-  --link-hover-color: #6cb6ff;
+  /* Updated link colors to be lighter and more vibrant */
+  --link-color: #58a6ff;
+  --link-hover-color: #79c0ff;
   --code-bg: #161b22;
   --accent-color: #1f6feb;
   --border-color: #30363d;
@@ -26,6 +26,9 @@ body {
   color: var(--text-color);
   font-size: 12pt;
   font-family: "Inter", -apple-system, BlinkMacMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
 }
 
 header {
@@ -33,6 +36,7 @@ header {
   text-align: center;
   text-decoration: none;
   color: var(--heading-color);
+  margin-bottom: 40px;
 }
 
 header a,
@@ -56,6 +60,10 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 h1 a,
@@ -74,6 +82,8 @@ header h1 {
   padding-bottom: 10px;
   margin-top: 60px;
   font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
 }
 
 header h2 {
@@ -82,6 +92,7 @@ header h2 {
   font-size: 26pt;
   color: var(--heading-color);
   font-weight: 600;
+  margin-top: 20px;
 }
 
 header h1.a,
@@ -124,6 +135,7 @@ h1.a:visited {
   width: 60%;
   color: var(--text-color);
   line-height: 1.6;
+  padding: 20px 0;
 }
 
 #content-wrapper h1,
@@ -165,6 +177,8 @@ h1.a:visited {
 
 #content-wrapper h2 {
   margin-top: 50px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
 }
 
 #content-wrapper h1,
@@ -175,6 +189,7 @@ h1.a:visited {
 
 #main-content p {
   text-align: justify;
+  margin-bottom: 16px;
 }
 
 /* Enhanced code block styling to match GitHub repositories */
@@ -189,6 +204,7 @@ h1.a:visited {
   border: 1px solid var(--border-color);
   line-height: 1.5;
   font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.9em;
 }
 
 .language-plaintext {
@@ -198,6 +214,24 @@ h1.a:visited {
   border-radius: 6px;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.95em;
+}
+
+code {
+  background-color: rgba(110, 118, 129, 0.1);
+  color: var(--text-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin: 16px 0;
 }
 
 hr {
@@ -289,4 +323,59 @@ hr {
 .k + .n {
   /* Keywords followed by names */
   color: #ffa657;
+}
+
+/* Additional utility classes */
+.muted {
+  color: var(--muted-text);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.border {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container-lg {
+    width: 90%;
+  }
+  
+  #content-wrapper {
+    width: 90%;
+  }
+  
+  header h1 {
+    font-size: 24pt;
+    margin-top: 30px;
+  }
+  
+  header h2 {
+    font-size: 20pt;
+  }
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-text);
 }

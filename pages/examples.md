@@ -94,6 +94,7 @@ JavaScript
 ## 📊 Tablas
 
 ### Tabla Básica
+
 | Nombre | Edad | Ciudad |
 |--------|------|--------|
 | Juan   | 25   | Madrid |
@@ -101,6 +102,7 @@ JavaScript
 | Pedro  | 22   | Valencia |
 
 ### Tabla con Alineación
+
 | Producto | Precio | Cantidad |
 |:---------|:------:|---------:|
 | Laptop   | €999   | 5        |
@@ -108,6 +110,7 @@ JavaScript
 | Teclado  | €75    | 15       |
 
 ### Tabla Compleja
+
 | Lenguaje | Paradigma | Popularidad | Año |
 |----------|-----------|-------------|-----|
 | Python | Multiparadigma | ⭐⭐⭐⭐⭐ | 1991 |

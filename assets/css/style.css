@@ -7,8 +7,8 @@
   --text-color: #c9d1d9;
   --header-color: #c9d1d9;
   /* Updated link colors to be more vibrant and visible */
-  --link-color: #58a6ff;
-  --link-hover-color: #79c0ff;
+  --link-color: #4493f8;
+  --link-hover-color: #6cb6ff;
   --code-bg: #161b22;
   --accent-color: #1f6feb;
   --border-color: #30363d;
@@ -144,6 +144,11 @@ h1.a:visited {
   text-decoration: none;
   color: var(--link-color);
   transition: color 0.1s ease;
+}
+
+a, a:hover, a:visited{
+color: var(--link-color);
+color: var(--link-hover-color);
 }
 
 #main-content a:hover {

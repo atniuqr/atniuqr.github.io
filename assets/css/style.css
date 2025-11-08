@@ -1,200 +1,361 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
+/* Tema Dracula con Fuentes Stencil */
 :root {
-  --bg-color: #0d1117;
-  --text-color: #c9d1d9;
-  --header-color: #ffffff;
-  --link-color: #58a6ff;
-  --code-bg: #161b22;
-  --accent-color: #1f6feb;
-  --border-color: #30363d;
+  /* Colores del tema Dracula */
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+  
+  /* Fuentes */
+  --stencil-font: 'Arial Black', 'Impact', 'Stencil', sans-serif;
+  --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --code-font: 'Fira Code', 'Consolas', 'Monaco', monospace;
 }
 
-.container-lg{
-  width: 60%;
-  margin: 0 auto;
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-size: 12pt;
-}
-
-header {
-  font-family: "Noto Serif", serif;
-  text-align: center;
-  text-decoration: none;
-  color: var(--header-color);
-}
-
-header a, header a:hover, header a:visited {
-  font-family: "Noto Serif", serif;
-  text-align: center;
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-h1, h2, h3, h4, h5, h6{
-  color: #0bb2b8;
-}
-
-h1 a, h1 a:hover, h1:visited{
-  font-family: "Noto Serif", serif;
-  text-align: center;
-  color: #f8f9fa;
-  text-align: center;
-  font-size: 3.5rem;
-  text-decoration: none;  
-}
-
-header h1 {
-  font-family: "Noto Serif", serif;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30pt;
-  font-family: "Noto Serif", serif;
-  padding-bottom: 10px;
-  margin-top: 60px;
-}
-
-header h2 {
-  text-decoration: none;
-  font-family: "Noto Serif", serif;
-  font-size: 26pt;
-  color: var(--header-color);
-}
-
-header h1.a, h1.a:hover, h1.a:visited {
-  font-family: "Noto Serif", serif;
-  text-align: center;
-  font-size: larger;
-  text-decoration: none;
-  color: var(--header-color);
-}
-
-#content-wrapper h3 {
-  font-size: 20pt;
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-#content-wrapper h4 {
-  font-size: 19pt;
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-#content-wrapper h5 {
-  font-size: 18pt;
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-#content-wrapper h6 {
-  font-size: 16pt;
-  font-weight: bold;
-  color: var(--header-color);
-}
-
-#content-wrapper {
-  font-family: "Ubuntu Mono", monospace;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  width: 60%;
-  color: var(--text-color);
 }
 
-#content-wrapper h1, #content-wrapper h2, #content-wrapper h3, 
-#content-wrapper h4, #content-wrapper h5, #content-wrapper h6 {
-  font-family: "Noto Serif", serif;
-  color: var(--header-color);
-  font-weight: bold;
+/* Encabezados con estilo stencil */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--stencil-font);
+  color: var(--purple);
+  margin: 1.5rem 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--current-line);
+  padding-bottom: 0.5rem;
 }
 
-#main-content a, #main-content a:hover, #main-content a:visited {
-  font-family: "Ubuntu Mono", monospace;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-#sidebar a, #sidebar a:hover, #sidebar a:visited {
-  font-family: "Ubuntu Mono", monospace;
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-#content-wrapper h2 {
-  margin-top: 50px;
-}
-
-#content-wrapper h1, #content-wrapper h2 {
+h1 {
+  font-size: 2.5rem;
+  color: var(--pink);
   text-align: center;
-  color: var(--header-color);
+  border-bottom: 4px solid var(--pink);
+  margin-bottom: 2rem;
 }
 
-#main-content p {
-  text-align: justify;
+h2 {
+  font-size: 2rem;
+  color: var(--cyan);
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: var(--green);
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+h5 {
+  font-size: 1.25rem;
+  color: var(--orange);
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: var(--red);
+}
+
+/* Enlaces */
+a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px dotted var(--cyan);
+}
+
+a:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+
+/* Párrafos y texto */
+p {
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+em {
+  color: var(--green);
+  font-style: italic;
+}
+
+del {
+  color: var(--comment);
+  text-decoration: line-through;
+}
+
+code {
+  background-color: var(--current-line);
+  color: var(--orange);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+}
+
+/* Listas */
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Lista de tareas */
+.task-list-item {
+  list-style-type: none;
+  margin-left: -1.5rem;
+}
+
+.task-list-item-checkbox {
+  margin-right: 0.5rem;
+}
+
+/* Lista de definición */
+dt {
+  font-weight: bold;
+  color: var(--yellow);
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+  color: var(--foreground);
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: var(--current-line);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--background);
+}
+
+th {
+  background-color: var(--purple);
+  color: var(--background);
+  font-family: var(--stencil-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(68, 71, 90, 0.5);
+}
+
+tr:hover {
+  background-color: rgba(139, 233, 253, 0.1);
+}
+
+/* Citas */
+blockquote {
+  border-left: 4px solid var(--green);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: var(--current-line);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+/* Bloques de código */
+.highlighter-rouge {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .highlight {
-  background-color: var(--code-bg);
-  color: var(--text-color);
-  padding: 10px 15px;
-  margin-top: 20px;
-  border-radius: 6px;
+  background-color: var(--current-line);
+  padding: 1rem;
   overflow-x: auto;
-/*  border: 1px solid var(--border-color);*/
 }
 
-.language-plaintext {
-  background-color: var(--code-bg);
-  color: var(--text-color);
-  padding: 3px 5px;
-  margin-top: 20px;
-  /*border-radius: 6px;*/
-  overflow-x: auto;
-  /* border: 1px solid var(--border-color); */
+pre {
+  margin: 0;
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
+/* Colores de sintaxis para diferentes lenguajes */
+.language-javascript .c1 { color: var(--comment); } /* Comentarios */
+.language-javascript .kd { color: var(--purple); } /* Palabras clave */
+.language-javascript .nx { color: var(--cyan); } /* Identificadores */
+.language-javascript .s2 { color: var(--yellow); } /* Strings */
+
+.language-python .c1 { color: var(--comment); }
+.language-python .k { color: var(--purple); }
+.language-python .n { color: var(--cyan); }
+.language-python .s { color: var(--yellow); }
+
+.language-html .nt { color: var(--purple); } /* Etiquetas HTML */
+.language-html .na { color: var(--cyan); } /* Atributos */
+.language-html .s { color: var(--yellow); } /* Valores de atributos */
+
+.language-css .c { color: var(--comment); }
+.language-css .k { color: var(--purple); }
+.language-css .p { color: var(--cyan); }
+.language-css .s { color: var(--yellow); }
+
+/* Elementos interactivos */
+details {
+  background-color: var(--current-line);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+  font-family: var(--stencil-font);
+  color: var(--pink);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+details[open] {
+  border: 1px solid var(--pink);
+}
+
+/* Líneas horizontales */
 hr {
   border: none;
-  height: 1px;
-  background-color: transparent;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--purple), transparent);
+  margin: 2rem 0;
 }
 
-
-/* Syntax highlighting colors similar to GitHub Dark */
-.k, .kt { /* Keywords */
-  color: #ff7b72;
-  font-weight: bold;
+/* Contenedor principal */
+.container-lg {
+  background-color: rgba(40, 42, 54, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--current-line);
 }
 
-.o, .n, .nt, .nl { /* Operators, numbers, etc. */
-  color: #d2a8ff;
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.na, .cp, .no { /* Attributes, class names */
-  color: #79c0ff;
+/* Elementos matemáticos (si se usan) */
+.math {
+  font-family: var(--code-font);
+  color: var(--orange);
 }
 
-.nb, .kc, .mi { /* Built-in classes, constants */
-  color: #79c0ff;
-  font-weight: bold;
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .container-lg {
+    padding: 1rem;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+  }
 }
 
-.nc, .p { /* Classes, punctuation */
-  color: #ffa657;
-  font-weight: bold;
+/* Animaciones sutiles */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.3s ease;
 }
 
-.s, .nf, .s2, .dl { /* Strings, functions */
-  color: #a5d6ff;
+a, button, summary {
+  transition: all 0.3s ease;
 }
 
-.c1, .c, .c2 { /* Comments */
-  color: #8b949e;
-  font-style: italic;
+/* Efectos de foco para accesibilidad */
+a:focus, button:focus, summary:focus {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--current-line);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--comment);
 }

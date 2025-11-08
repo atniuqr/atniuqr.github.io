@@ -11,6 +11,7 @@ FastAPI
 Estudiar Django
 - [playlist](https://www.youtube.com/playlist?list=PLIxM-ZJeRHBhYLsssaC2XkETgNPNHb79Y)
 - [playlist 2021](https://www.youtube.com/playlist?list=PL-51WBLyFTg1pUMaTJ4WSgnyvWfLGmwDm)
+- [Django REST con microservicios](https://www.youtube.com/playlist?list=PLFRKQL-FSrHLOdeduC_5ij26pkO2IOoQk)
 
 Aprender Django con proyectos
 - [Hospital Magnament System](https://www.youtube.com/playlist?list=PLTV1jAY3nKHNAcFmUO8PcAIeEJF8qbDAd)

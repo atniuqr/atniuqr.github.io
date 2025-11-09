@@ -15,6 +15,8 @@ FastAPI
 - [Youtube Clone](https://www.youtube.com/watch?v=_88Uvrvp3UM)
 - [Bllog + react](https://www.youtube.com/watch?v=O5lodHjgXCI&pp=ygUNZmFzdGFwaSBjbG9uZQ%3D%3D)
 - [Event-Driven system](https://www.youtube.com/watch?v=VkPUBx_WtK8&t=410s&pp=ygUNZmFzdGFwaSBjbG9uZQ%3D%3D)
+- [Celery](https://www.youtube.com/watch?v=Ct6-2x_F-Og)
+- [Celery Flower](https://www.youtube.com/watch?v=mcX_4EvYka4)
 
 Estudiar Django
 - [playlist](https://www.youtube.com/playlist?list=PLIxM-ZJeRHBhYLsssaC2XkETgNPNHb79Y)

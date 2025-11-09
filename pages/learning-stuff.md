@@ -1,6 +1,11 @@
 FastAPI
 
 - [FastAPI](https://www.youtube.com/playlist?list=PL2L4c5jChmcsDrSaaH_5pKdCezAQ01o1a)
+- [FastAPI Curso](https://www.youtube.com/playlist?list=PLpdAy0tYrnKy3TvpCT-x7kGqMQ5grk1Xq)
+- [FastAPI JWT](https://www.youtube.com/watch?v=O0qs1uRd1K4)
+- [JWT](https://www.youtube.com/watch?v=Of1V5JV6voc)
+- [FastAPI React](https://www.youtube.com/watch?v=aSdVU9-SxH4)
+- [FastAPI Auth](https://www.youtube.com/watch?v=7_3TnuQ4EVY)
 - [Microservicios](https://www.youtube.com/watch?v=Cy9fAvsXGZA&pp=ygUMZmFzdGFwaSByZXN0)
 - [FastAPI & ORACLE](https://www.youtube.com/watch?v=__XNtJ3pDh0&t=10536s&pp=ygUNZmFzdGFwaSBjbG9uZQ%3D%3D)
 - [Testing](https://www.youtube.com/watch?v=56whiv57T9I&pp=ygUNZmFzdGFwaSBjbG9uZQ%3D%3D)
@@ -33,3 +38,10 @@ Aprender Django con proyectos
 - [Sportify clone 1video](https://www.youtube.com/watch?v=DGTvNM7Yyis&pp=ygUUZGphbmdvIHNwb3RpZnkgY2xvbmU%3D)
 - [Twitter clone + vue](https://www.youtube.com/watch?v=GClIzqdYNr0&pp=ygUUZGphbmdvIHR3aXR0ZXIgY2xvbmXSBwkJAwoBhyohjO8%3D)
 - [Twitter clone + react](https://www.youtube.com/watch?v=f1R_bykXHGE&pp=ygUUZGphbmdvIHR3aXR0ZXIgY2xvbmU%3D)
+
+Microservices
+- [Microservicios python](https://www.youtube.com/watch?v=hmkF77F9TLw)
+
+NodeJs
+- [Amazon native supabase](https://www.youtube.com/watch?v=QE1UPaGl6wI)
+- [Rider websockets react](https://www.youtube.com/watch?v=u_8-jF01hW8)

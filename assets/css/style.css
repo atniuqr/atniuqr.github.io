@@ -376,3 +376,8 @@ code:not([class*="language-"]) {
   font-family: "JetBrains Mono", monospace;
   font-family: "Fira Sans", sans-serif;
 }
+
+
+a, a:hover, a:visited{
+  text-decoration: none;
+}

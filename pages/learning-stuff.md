@@ -47,3 +47,28 @@ Microservices
 NodeJs
 - [Amazon native supabase](https://www.youtube.com/watch?v=QE1UPaGl6wI)
 - [Rider websockets react](https://www.youtube.com/watch?v=u_8-jF01hW8)
+
+Linux Labs
+- [ Linux System Administration Full Course ](https://www.youtube.com/watch?v=UCr04qIB7uc)
+- [ The Linux Basics Course: Beginner to Sysadmin, Step by Step ](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK)
+- [Virtual Cyber Security Lab Building Series](https://www.youtube.com/playlist?list=PLjjkJroii8DDb0QZpWLo978VXcLp8-xW3)
+- [Ultimate Cyber Security Lab](https://www.youtube.com/playlist?list=PL3ljjyal211AbTqlxSo6CGBiVqsXw8wrp)
+- [ RedHat RHCSA - Full Course with Labs [8 Hours] ](https://www.youtube.com/watch?v=Qt7l-TFBMo4&t=8761s)
+- [Linux Security](https://www.youtube.com/playlist?list=PLBf0hzazHTGMG7fJvZoAAw-JE3WyMIOQv)
+- [Linux Security](https://www.youtube.com/playlist?list=PLT98CRl2KxKHVD7tCyn8heKS-RJdnlbHg)
+- [Serverless](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkXQS12WiLsH1oaNZBSoWuV)
+- [Ethical Hacking](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnklGh3FNRLECx_2D_vK3mu)
+- [Linux Basic to Advance](https://www.youtube.com/playlist?list=PLKp3X-578hN99d7bj6EU-AnGyAE6Fdc6R)
+- [Linux Security Crash Course](https://www.youtube.com/playlist?list=PLKp3X-578hN8736K0xoTivWxh7mg1GJqw)
+- [Linux Server Hardening: Security → Performance → Automation](https://www.youtube.com/watch?v=MxmljCTDMSY)
+- [ SSH for Beginners: The Ultimate Getting Started Guide ](https://www.youtube.com/watch?v=YS5Zh7KExvE)
+- [ #Entunelamiento (#tuneles /#tunneling entre redes) con #SSH desde cero ](https://www.youtube.com/watch?v=rhZF1_O5l84)
+- [Romper Claves - Password Cracking](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQwdepemfv9WtGoAXAjMhfZk)
+- [Inyección SQL - SQL Injection - SQLi](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQwgftDavZ4n3V36m1GirmTl)
+- [Análisis de Tráfico de Red](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQxv_465afkNlLt_1BtreuHv)
+- [ Curso de Linux desde Cero ](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQyyLJXZ6CN0P0DChWjQGnex)
+- [Curso Bash Scripting](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQzextMNJL_lxxyc4pjqx8-z)
+- [Cursos SecPro](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQygemVf71LEDSDBz42iLLnc)
+- [ Curso de Hacking Etico / Ethical Hacking Course for beginners ](https://www.youtube.com/playlist?list=PL1Kv5m-HTbQwoaP40qTXfKryQMld1qP5A)
+
+
